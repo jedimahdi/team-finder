@@ -5,10 +5,6 @@ const mongoose = require('./config/mongoose');
 
 mongoose.connect();
 
-app.get('/', (req, res) => {
-    res.send('Hello ');
-});
-
 app.listen(port, () => console.info(`server started on port ${port} (${env})`));
 
 module.exports = app;
